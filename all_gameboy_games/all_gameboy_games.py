@@ -28,20 +28,29 @@ for column in column_headers:
         counter = counter + 1
 
 # Search and Return value from Table
-searchterm = "HAL Laboratory"
-returnsearch2 = {}
-leaveloop = False
+        
+while True:
+    print("\tType in a Gameboy game, and I'll return some information about it")
+    print("\tType 'q' to exit")
 
-for column in column_headers:
+    searchterm = input("What Gameboy game would you like to know more about? ")
+    if searchterm == 'q':
+        break
+    #searchterm = f"{searchterm}*"
+    #print(f"Searching for {searchterm}")
+    returnsearch = {}
+    #leaveloop = False
 
-    counter = 0
-    while counter < row_length:
+    for column in column_headers:
 
-        value = data[column, counter]
-        if value == searchterm:
-            for column1 in column_headers:
-                returnsearch2[column1,counter] = data[column1, counter]
+        counter = 0
+        while counter < row_length:
 
-        counter = counter + 1
+            value = data[column, counter]
+            if value == searchterm:
+                for column1 in column_headers:
+                    returnsearch[column1,counter] = data[column1, counter]
 
-print(f"Number of results: {len(returnsearch2)}\n Actual Results: {returnsearch2}")
+            counter = counter + 1
+
+    print(f"Number of results: {len(returnsearch)}\n\n\n Actual Results: {returnsearch}")

@@ -4,7 +4,8 @@
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://uk.linkedin.com/in/efe-enobakhare)
 
 ## Description
-This will connect to the GameBoys Advance Wikipedia page - 'https://en.wikipedia.org/wiki/List_of_Game_Boy_Advance_games' - and download the table showing all games released for the Game Boy Advance handheld system, excluding any cancelled and unlicenced games.
+This will connect to the GameBoys Wikipedia page - 'https://en.wikipedia.org/wiki/List_of_Game_Boy_games' - and download the table showing all games released for the
+Game Boy handheld system, excluding any cancelled and unlicenced games.
 
 Once this has occured, you can search across any field and see a Python Dictionary with the results. The fields that can be returned are shown below
 - Title
@@ -17,11 +18,12 @@ Once this has occured, you can search across any field and see a Python Dictiona
 
 ## How to Install/Run/Usage
 - Clone this repository
--   git clone https://github.com/jadegamesuk/python_examples.git
--   cd all_gba_games
--   python3 all_gba_games.py
+-   git clone https://github.com/jadegamesuk/python_examples/all_gameboy_games.git
+-   cd all_gameboy_games
+-   python3 all_gameboy_games.py
 
 ## Demo
+![all_gameboy_games](https://github.com/jadegamesuk/python_examples/assets/39485724/d6c5557c-8b25-4c85-b5e2-2de5e6d9c9dc)
 
 ## To Do
 - Ensure user input isn't case sensitive

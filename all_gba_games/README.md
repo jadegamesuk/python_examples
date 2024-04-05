@@ -23,7 +23,8 @@ Once this has occured, you can search across any field and see a Python Dictiona
 -   python3 all_gameboy_games.py
 
 ## Demo
-![all_gameboy_games](https://github.com/jadegamesuk/python_examples/assets/39485724/d6c5557c-8b25-4c85-b5e2-2de5e6d9c9dc)
+![all_gba_games](https://github.com/jadegamesuk/python_examples/assets/39485724/99d8cf9a-f859-4f94-91fb-8b96c5fa1916)
+
 
 ## To Do
 - Ensure user input isn't case sensitive

@@ -38,7 +38,7 @@ python3 all_gameboy_games.py
 
 
 ## To Do
-- Ensure user input isn't case sensitive
+- ~Ensure user input is case sensitive~
 - Highlight string user searched for in results
 - Save web scrape to a CSV so users don't require an internet connection each time 
 

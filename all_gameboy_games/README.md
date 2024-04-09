@@ -20,11 +20,11 @@ Once this has occured, you can search across any field and see a Python Dictiona
 ```
 git clone https://github.com/jadegamesuk/python_examples.git
 ```
-- Install the modules in the requirements.txt file
-```
 - Change directory to all_gameboy_games
 ```
 cd all_gameboy_games
+```
+- Install the modules in the requirements.txt file
 ```
 pip install -r requirements.txt
 ```

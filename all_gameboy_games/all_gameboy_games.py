@@ -2,6 +2,8 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 from io import StringIO
+import re
+import math
 
 r = requests.get('https://en.wikipedia.org/wiki/List_of_Game_Boy_games')
 
@@ -36,21 +38,30 @@ while True:
     searchterm = input("What Gameboy game would you like to know more about? ")
     if searchterm == 'q':
         break
-    #searchterm = f"{searchterm}*"
-    #print(f"Searching for {searchterm}")
+    
+    searchterm1 = r".*" + searchterm + r".*"
     returnsearch = {}
-    #leaveloop = False
+    returnsearchcounter = []
 
     for column in column_headers:
-
         counter = 0
         while counter < row_length:
-
             value = data[column, counter]
-            if value == searchterm:
-                for column1 in column_headers:
-                    returnsearch[column1,counter] = data[column1, counter]
 
+            try:
+                if re.match(searchterm1, value, re.IGNORECASE):
+                    returnsearchcounter.append(value)
+                    #print(f"VALUE IS {returnsearchcounter}")
+                    if not pd.isna(value):
+                        pass
+                    for column1 in column_headers:
+                        returnsearch[column1,counter] = data[column1, counter]
+            except:
+                pass
             counter = counter + 1
 
-    print(f"Number of results: {len(returnsearch)}\n\n\n Actual Results: {returnsearch}")
+    print(f"Actual Results: {returnsearch}\n")
+    print(f"Number of returned results: {len(returnsearchcounter)}\n")
+    print(f"Short results: {returnsearchcounter}\n")
+
+

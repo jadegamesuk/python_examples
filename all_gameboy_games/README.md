@@ -17,9 +17,21 @@ Once this has occured, you can search across any field and see a Python Dictiona
 
 ## How to Install/Run/Usage
 - Clone this repository
--   git clone https://github.com/jadegamesuk/python_examples.git
--   cd all_gba_games
--   python3 all_gba_games.py
+```
+git clone https://github.com/jadegamesuk/python_examples.git
+```
+- Install the modules in the requirements.txt file
+```
+pip install -r requirements.txt
+```
+- Change directory to all_gba_games
+```
+cd all_gba_games
+```
+- Run Python script
+```
+python3 all_gba_games.py
+```
 
 ## Demo
 

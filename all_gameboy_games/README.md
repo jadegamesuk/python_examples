@@ -22,11 +22,11 @@ git clone https://github.com/jadegamesuk/python_examples.git
 ```
 - Install the modules in the requirements.txt file
 ```
-pip install -r requirements.txt
-```
 - Change directory to all_gameboy_games
 ```
 cd all_gameboy_games
+```
+pip install -r requirements.txt
 ```
 - Run Python script
 ```
